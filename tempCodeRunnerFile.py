@@ -1,0 +1,7 @@
+mg = torch.rand(224, 224, 3)
+img = img.permute(2, 0, 1).unsqueeze(0)    
+model = vgg16()
+model.eval()
+output = model(img)
+print(output.shape)
+print(output)
